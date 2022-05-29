@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+    <div class="container">
+        <br>
+        <br>
+        <h3 class="content" align="center">Face Recognition Application</h3>
+        <br>
+        <br>
+        <br>
+        <p class="content" align="center">
+            You may allow us to capture your image so that you are able to access your passwords
+        </p>
+         <div class="container" align="center">
+        <p>Please wait for the webcam to capture your image</p>
+        <p>(The webcam light will start flashing so that you can understand that the webcam is working)</p>
+             <br>
+        <h3><i>Please press escape 3 times to complete the process</i></h3>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+
+        <div align="center">
+            <a href=" {{ url_for('compare') }} " class="btn btn-outline-primary">Try it now</a>
+        </div>
+        
+    </div>
+
+{% endblock %}

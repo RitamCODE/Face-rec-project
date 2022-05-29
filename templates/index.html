@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+    <div class="container">
+        <br><br>
+        <h1 class="content">Welcome to FACEmemory</h1>
+        <br>
+        <br>
+        <br>
+        <h5 align="center">If you are new to this website, please click the button below to register yourself</h5>
+        <br>
+
+        <div align="center">
+            <a href=" {{ url_for('register') }} " class="btn btn-outline-primary">Register</a>
+        </div>
+        <br>
+        <br>
+        <h5 align="center">You can navigate to Face app page for finding your user id and passwords</h5>
+    </div>  
+
+{% endblock %}

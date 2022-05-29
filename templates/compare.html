@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block bodyblock %}
+
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./app/data/taken_img.png">
+            </div>
+            <div class="col-md-6">
+                <img src="./app/data/taken_img1.png">
+            </div>
+        </div
+    </div>-->
+    {% if value==1 %}
+        <div align="center">
+            <h2>The images are equal</h2>
+            <h2>User Approved</h2>
+            <div align="center">
+            <a href=" {{ url_for('fetchSite') }} " class="btn btn-outline-primary">Fetch your required data</a>
+            </div>
+        </div>
+    {% else %}
+        <div align="center">
+            <h2>The images are different</h2>
+            <h2>You can try once again and this time please ensure that there are no noticeable objects near you</h2>
+        </div>
+    {% endif %}
+{% endblock %}

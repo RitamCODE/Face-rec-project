@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block bodyblock %}
+
+
+
+    <!--<div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./app/data/taken_img.png">
+            </div>
+            <div class="col-md-6">
+                <img src="./app/data/taken_img1.png">
+            </div>
+        </div
+    </div>-->
+    <!--<h5 align="center">here is your image:</h5>
+    <br>
+    <br>
+    <div class="container">
+        <div align="center">
+            <img src="{{image}}" width="300" height="300">
+        </div>
+    </div>-->
+    {% if value==True %}
+        <div>
+            <br>
+            <br>
+            <h4 align="center">Image successfully captured and stored</h4>
+            <br>
+            <br>
+            <h4 align="center">You are now registered and can successfully use the app</h4>
+            <br>
+            <br>
+            <h4 align="center"><i>Navigate to faceapp page for more</i></h4>
+        </div>
+    {% else %}
+        <div>
+            <br>
+            <br>
+            <h3 align="center">Image cannot be captured</h3>
+        </div>
+    {% endif %}
+{% endblock %}
