@@ -3,10 +3,8 @@
 import numpy as np
 import cv2
 
-# import sys
 
-# def pipeline_model(img,color='rgb')
-
+# haar cascade classifier
 haar = cv2.CascadeClassifier('./app/data/haarcascade_frontalface_default.xml')
 
 
@@ -28,7 +26,7 @@ def pipeline_model():
         ret, frame = cap.read()
         # ret will return true if the video can be read
         # frame is our single image
-        # if ret == False:
+        
 
         frame = face_detect(frame)
         if ret:
@@ -37,9 +35,9 @@ def pipeline_model():
         else:
             break
         cv2.imshow('object_detect', frame)
-        # cv2.imshow('gray',gray)
+        
 
-        # we have suppose 24 fps then we have to run the loop for 40 ms
+        # we have suppose 24 fps then we have to run the loop for 40/30 ms
         if cv2.waitKey(30) == 27:
             # 27 is the number of escape key
             break
