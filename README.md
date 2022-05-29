@@ -8,4 +8,7 @@ verified through face recognition
 Anybody who has access to your computer has access to the saved passwords in your google account. This website therfore verifies the user using seamless 
 face recognition before getting access to passwords. Therefore there is no need of remembering, this website will remember both the password and you face
 
-
+TO BE NOTED:
+All the html files are in the templates folder
+The basic html structure is in 'base.html' which is inherited by all the html files
+The main page is in 'index.html'
