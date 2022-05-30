@@ -12,3 +12,4 @@ NOTE:
 All the html files are in the templates folder
 The basic html structure is in 'base.html' which is inherited by all the html files
 The main page is in 'index.html'
+The entire app runs on running the main.py and the views.py in the app folder has all the necessary functions for running the file
