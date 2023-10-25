@@ -3,12 +3,26 @@ body{
 background: linear-gradient(to right, #9aacc8, #e1b8f7);
 }
 
+.container{
+border: none;
+background: white;
+}
+
+
 .content
 {
     color: #002f4d;
 }
 
+/* <<<<<<< patch-3 */
 .container-fluid{
 color: #e9b925;
 padding: 1px;
+/* ======= */
+
+
+
+.nav-link{
+color: #002f4d;
+/* >>>>>>> master */
 }
